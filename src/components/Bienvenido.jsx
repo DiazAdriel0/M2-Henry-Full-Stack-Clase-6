@@ -12,9 +12,9 @@ export default function Bienvenido() {
       <h1>Homework 06</h1>
       <h3>{studentName}</h3>
       <ul>
-        {techSkills.map(skill => <li>{skill}</li>)}
+        {techSkills.map((skill,index) => <li key={index}>{skill}</li>)}
       </ul>
-      {<Botones alerts={alerts}/>}
+      <Botones alerts={alerts}/>
     </div>
   );
 }
